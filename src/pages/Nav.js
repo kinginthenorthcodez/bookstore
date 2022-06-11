@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { CgProfile } from 'react-icons/cg';
 
 const Nav = () => (
   <>
@@ -9,6 +10,9 @@ const Nav = () => (
         <div className="links">
           <Link to="/">Books</Link>
           <Link to="/categories">Categories</Link>
+          <span className="icon">
+            <CgProfile size={30} />
+          </span>
         </div>
       </nav>
     </header>

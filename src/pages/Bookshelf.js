@@ -7,16 +7,19 @@ const Bookshelf = () => {
       id: 1,
       title: 'Expanse',
       author: 'Maqueen',
+      category: 'Sci-Fi',
     },
     {
       id: 2,
       title: 'Expanse',
       author: 'Maqueen',
+      category: 'Sci-Fi',
     },
     {
       id: 3,
       title: 'Expanse',
       author: 'Maqueen',
+      category: 'Sci-Fi',
     },
   ]);
 
@@ -25,6 +28,7 @@ const Bookshelf = () => {
       id: 4,
       title: 'Expanse',
       author: 'Maqueen',
+      category: 'Sci-Fi',
     };
     newBook(book);
   };
@@ -34,8 +38,16 @@ const Bookshelf = () => {
     <>
       <div>
         <ul>
-          {books.map(({ id, title, author }) => (
-            <Book key={id} title={title} author={author} addBook={addBook} />
+          {books.map(({
+            id, title, author, category,
+          }) => (
+            <Book
+              key={id}
+              title={title}
+              author={author}
+              category={category}
+              addBook={addBook}
+            />
           ))}
         </ul>
       </div>
