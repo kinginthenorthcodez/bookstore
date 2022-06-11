@@ -2,19 +2,19 @@
 
 const initialState = [
   {
-    id: 1,
+    id: '1',
     title: 'Expanse',
     author: 'Maqueen',
     category: 'Sci-fi',
   },
   {
-    id: 2,
+    id: '2',
     title: 'The Wheel of Time',
     author: 'J.R.Rowlings',
     category: 'Epic',
   },
   {
-    id: 3,
+    id: '3',
     title: 'Game of thrones',
     author: 'George.R.Martin',
     category: 'Epic',
