@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { addBook } from '../redux/books/books';
 
 const Addbook = () => {
   const [book, setState] = useState({
@@ -7,15 +10,20 @@ const Addbook = () => {
     author: '',
     category: '',
   });
-  const [tempBooks, setTempBooks] = useState([]);
+  // const [tempBooks, setTempBooks] = useState([]);
+  const dispatch = useDispatch();
 
   const submitBook = (e) => {
     e.preventDefault();
     if (book.title && book.author && book.category) {
-      const newBook = { ...book, id: new Date().getTime().toString() };
-      setTempBooks([...tempBooks, newBook]);
+      const newBook = { ...book, id: uuidv4() };
+      dispatch(addBook(newBook));
+      // setTempBooks([...tempBooks, newBook]);
       setState({
-        id: '', title: '', author: '', category: '',
+        id: '',
+        title: '',
+        author: '',
+        category: '',
       });
     }
   };
@@ -24,7 +32,6 @@ const Addbook = () => {
     setState({ ...book, [e.target.name]: e.target.value });
   };
 
-  console.log(tempBooks);
   return (
     <>
       <div className="add-book-section">
