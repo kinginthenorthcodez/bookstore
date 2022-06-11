@@ -1,5 +1,26 @@
 // reducer
-const reducer = (state = [], action) => {
+
+const initialState = [
+  {
+    id: 1,
+    title: 'Expanse',
+    author: 'Maqueen',
+    category: 'Sci-fi',
+  },
+  {
+    id: 2,
+    title: 'The Wheel of Time',
+    author: 'J.R.Rowlings',
+    category: 'Epic',
+  },
+  {
+    id: 3,
+    title: 'Game of thrones',
+    author: 'George.R.Martin',
+    category: 'Epic',
+  },
+];
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_BOOK':
       return [...state, action.payload];
