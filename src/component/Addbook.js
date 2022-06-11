@@ -12,6 +12,7 @@ const Addbook = () => {
   });
   // const [tempBooks, setTempBooks] = useState([]);
   const dispatch = useDispatch();
+  const categories = ['Sci-fi', 'Epic', 'Action', 'Wuxia', 'Drama'];
 
   const submitBook = (e) => {
     e.preventDefault();
@@ -59,7 +60,11 @@ const Addbook = () => {
             onChange={handelChange}
           >
             <option>Choose a category</option>
-            <option>Epic</option>
+            {categories.sort().map((categ) => (
+              <option key={uuidv4()} value={categ}>
+                {categ}
+              </option>
+            ))}
           </select>
           <button type="submit" className=" btn btn-submit">
             submit
