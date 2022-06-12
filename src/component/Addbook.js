@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { addBookAPI } from '../redux/books/books';
 
 const Addbook = () => {
   const [book, setState] = useState({
-    id: '',
+    item_id: '',
     title: '',
     author: '',
     category: '',
@@ -17,11 +17,11 @@ const Addbook = () => {
   const submitBook = (e) => {
     e.preventDefault();
     if (book.title && book.author && book.category) {
-      const newBook = { ...book, id: uuidv4() };
-      dispatch(addBook(newBook));
+      const newBook = { ...book, item_id: uuidv4() };
+      dispatch(addBookAPI(newBook));
       // setTempBooks([...tempBooks, newBook]);
       setState({
-        id: '',
+        item_id: '',
         title: '',
         author: '',
         category: '',
