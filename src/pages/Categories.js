@@ -8,7 +8,7 @@ const Categories = () => {
   const defaultStatus = useSelector((state) => state.categoryReducer);
   return (
     <>
-      <h4>{defaultStatus}</h4>
+      <h4 className="categories-status">{defaultStatus}</h4>
       <button type="button" onClick={() => dispatch(checkStatus(status))}>
         Check status
       </button>

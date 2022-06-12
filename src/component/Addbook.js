@@ -66,7 +66,7 @@ const Addbook = () => {
               </option>
             ))}
           </select>
-          <button type="submit" className=" btn btn-submit">
+          <button type="submit" className=" btn btn-submit active">
             submit
           </button>
         </form>

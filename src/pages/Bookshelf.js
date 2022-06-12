@@ -42,8 +42,8 @@ const Bookshelf = () => {
 
   return (
     <>
-      <div>
-        <ul>
+      <div className="book-container">
+        <ul className="book-items">
           {books.map((book) => (
             <Book
               key={book.item_id}
@@ -55,6 +55,7 @@ const Bookshelf = () => {
             />
           ))}
         </ul>
+        <hr />
       </div>
     </>
   );
