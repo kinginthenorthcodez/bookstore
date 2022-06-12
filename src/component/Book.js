@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
+// import { CircularProgressbar } from "react-circular-progressbar";
+// import "react-circular-progressbar/dist/styles.css";
 import { useDispatch } from 'react-redux';
 import { remove } from '../redux/books/books';
 
@@ -10,7 +10,7 @@ const Book = (props) => {
     id, title, author, category,
   } = props;
   const dispatch = useDispatch();
-  const percentage = 90;
+  // const percentage = 90; // <CircularProgressbar value={percentage} />
   return (
     <li className="book-item">
       <div>
@@ -36,7 +36,7 @@ const Book = (props) => {
       <div className="stats-section">
         <div className="progress-circle">
           <div style={{ width: 70, height: 70 }}>
-            <CircularProgressbar value={percentage} />
+            <span>progressbar</span>
           </div>
           <div>
             <h3 className="percentage">100%</h3>
@@ -45,7 +45,7 @@ const Book = (props) => {
         </div>
         <div className="chapter">
           <h5 className="current-chapter">current Chapter</h5>
-          <h5 className="current-number">Chapter Number</h5>
+          <h5 className="current-number">Chapter 17</h5>
           <button type="button" className="progress-btn submit">
             Update Progress
           </button>
