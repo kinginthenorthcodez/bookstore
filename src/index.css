@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@700&display=swap');
+
+:root {
+  --azure: #0290ff;
+  --black-two: #121212;
+}
 
 * {
   box-sizing: border-box;
@@ -18,22 +25,29 @@
   width: 100%;
   padding: 0 40px;
   height: 90%;
-  justify-content: space-between;
   align-self: center;
   margin: 0 auto;
 }
 
 .nav .text-logo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 28px;
-  padding: 5px;
-  margin: auto 0;
-  color: orange;
+  width: 19rem;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
 }
 
 .nav .links {
   display: flex;
   gap: 10px;
+  width: 60%;
+  justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
   margin: auto 0;
@@ -53,12 +67,31 @@
 }
 
 .nav .links a:first-child {
-  height: 2.313rem;
-  margin: 0.375rem 2.938rem 0.125rem 6.25rem;
+  width: 3.688rem;
+  height: 1rem;
+  margin: 1.125rem 2.563rem 0.688rem 0;
   font-family: Montserrat, sans-serif;
-  font-size: 1.875rem;
-  font-weight: bold;
-  color: #0290ff;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+}
+
+.nav .links a:last-child {
+  height: 1rem;
+  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
 }
 
 .icon {
@@ -144,7 +177,7 @@
 hr {
   color: #e8e8e8;
   margin: auto;
-  width: 85%;
+  width: 90%;
 }
 
 .add-book-section {
@@ -165,12 +198,12 @@ hr {
   padding-bottom: 10rem;
   display: grid;
   gap: 2%;
-  grid-template-columns: 30% 24% 21% 19%;
+  grid-template-columns: 30% 24% 21%;
 }
 
-.input,
-.select {
-  padding: 0.813rem 1.063rem 0.813rem 1rem;
+input,
+select {
+  padding: 1.5rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
@@ -189,6 +222,13 @@ hr {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
+  margin: 4% auto;
+}
+
+.form-btn {
+  display: flex;
+  width: 50rem;
+  justify-content: center;
 }
 
 .active:hover {
@@ -245,7 +285,8 @@ hr {
   color: #121212;
 }
 
-.progress-btn {
+.progress-btn,
+.btn-update-status {
   font-size: 0.813rem;
   font-weight: normal;
   width: 11.5rem;
@@ -259,4 +300,10 @@ hr {
   text-align: center;
   font-size: large;
   margin-top: 5rem;
+}
+
+.btn-status {
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }

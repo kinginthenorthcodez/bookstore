@@ -10,7 +10,8 @@ const Book = (props) => {
     id, title, author, category,
   } = props;
   const dispatch = useDispatch();
-  const percentage = 90;
+  const chaptervalue = Math.floor(Math.random() * 50);
+  const value = chaptervalue / 100;
   return (
     <li className="book-item">
       <div>
@@ -36,16 +37,26 @@ const Book = (props) => {
       <div className="stats-section">
         <div className="progress-circle">
           <div style={{ width: 70, height: 70 }}>
-            <CircularProgressbar value={percentage} />
+            <CircularProgressbar
+              value={value}
+              maxValue={1}
+              text={`${value}%`}
+            />
           </div>
           <div>
-            <h3 className="percentage">100%</h3>
+            <h3 className="percentage">
+              {value}
+              %
+            </h3>
             <span className="completed">completed</span>
           </div>
         </div>
         <div className="chapter">
           <h5 className="current-chapter">current Chapter</h5>
-          <h5 className="current-number">Chapter 17</h5>
+          <h5 className="current-number">
+            Chapter &nbsp;
+            {chaptervalue}
+          </h5>
           <button type="button" className="progress-btn submit">
             Update Progress
           </button>
