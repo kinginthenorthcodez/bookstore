@@ -2,6 +2,8 @@
 
 > The Bookstore is a React-Redux application connected to an existing API to create and remove books in a remote server. Users can Display the list of books, Add and Remove a selected book.
 
+![screenshot](./app_screenshot.png)
+
 ## Built With
 
 - React
@@ -44,6 +46,7 @@ Once you get into your directory, type in the terminal: git clone https or git c
 
 ### Step 7:
 
+npm i -g npm@latest to resolve any version dependecy
 Ready to work?⛏️ You're all set to explore and change the repo locally (on your computer).
 
 ## Authors
@@ -57,7 +60,7 @@ Ready to work?⛏️ You're all set to explore and change the repo locally (on y
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Sahar-AbdelSamad/bookstore/issues)
+Feel free to check the [issues page](https://github.com/kinginthenorthcodez/bookstore/issues)
 
 ## Show your support
 

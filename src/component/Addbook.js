@@ -10,7 +10,6 @@ const Addbook = () => {
     author: '',
     category: '',
   });
-  // const [tempBooks, setTempBooks] = useState([]);
   const dispatch = useDispatch();
   const categories = ['Sci-fi', 'Epic', 'Action', 'Wuxia', 'Drama'];
 
@@ -19,7 +18,6 @@ const Addbook = () => {
     if (book.title && book.author && book.category) {
       const newBook = { ...book, item_id: uuidv4() };
       dispatch(addBookAPI(newBook));
-      // setTempBooks([...tempBooks, newBook]);
       setState({
         item_id: '',
         title: '',
@@ -66,8 +64,8 @@ const Addbook = () => {
               </option>
             ))}
           </select>
-          <button type="submit" className=" btn btn-submit">
-            submit
+          <button type="submit" className="btn-submit submit active">
+            Add Book
           </button>
         </form>
       </div>

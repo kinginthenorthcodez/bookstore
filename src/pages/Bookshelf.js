@@ -9,26 +9,6 @@ const Bookshelf = () => {
   useEffect(() => {
     onFetchOk();
   }, [books]);
-  // const [books, newBook] = useState([
-  //   {
-  //     id: 1,
-  //     title: 'Expanse',
-  //     author: 'Maqueen',
-  //     category: 'Sci-Fi',
-  //   },
-  //   {
-  //     id: 2,
-  //     title: 'Expanse',
-  //     author: 'Maqueen',
-  //     category: 'Sci-Fi',
-  //   },
-  //   {
-  //     id: 3,
-  //     title: 'Expanse',
-  //     author: 'Maqueen',
-  //     category: 'Sci-Fi',
-  //   },
-  // ]);
 
   const addBook = () => {
     const book = {
@@ -42,8 +22,8 @@ const Bookshelf = () => {
 
   return (
     <>
-      <div>
-        <ul>
+      <div className="book-container">
+        <ul className="book-items">
           {books.map((book) => (
             <Book
               key={book.item_id}
@@ -55,6 +35,7 @@ const Bookshelf = () => {
             />
           ))}
         </ul>
+        <hr />
       </div>
     </>
   );

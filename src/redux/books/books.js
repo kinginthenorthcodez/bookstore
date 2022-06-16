@@ -50,9 +50,6 @@ export const addBookAPI = (book) => async (dispatch) => {
       headers: { 'Content-type': 'application/JSON' },
     },
   );
-
-  //   const AppId = await response.text();
-  //   console.log(AppId);
 };
 
 export const remove = (id) => async (dispatch) => {
