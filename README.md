@@ -60,7 +60,7 @@ Ready to work?⛏️ You're all set to explore and change the repo locally (on y
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Sahar-AbdelSamad/bookstore/issues)
+Feel free to check the [issues page](https://github.com/kinginthenorthcodez/bookstore/issues)
 
 ## Show your support
 
