@@ -9,8 +9,8 @@ const Nav = () => (
         <h1 className="text-logo">BookStore CMS</h1>
         <div className="links">
           <div className="link-items">
-            <Link to="/">Books</Link>
-            <Link to="/categories">Categories</Link>
+            <Link to="/">BOOKS</Link>
+            <Link to="/categories">CATEGORIES</Link>
           </div>
           <span className="icon">
             <CgProfile size={30} />

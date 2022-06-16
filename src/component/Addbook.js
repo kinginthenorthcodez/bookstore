@@ -64,11 +64,9 @@ const Addbook = () => {
               </option>
             ))}
           </select>
-          <div className="form-btn">
-            <button type="submit" className="btn-submit submit active">
-              submit
-            </button>
-          </div>
+          <button type="submit" className="btn-submit submit active">
+            Add Book
+          </button>
         </form>
       </div>
     </>

@@ -20,32 +20,28 @@ const Book = (props) => {
         <p className="'book-author">{author}</p>
         <div>
           <button type="button" className="btn">
-            comment
+            Comment
           </button>
           <button
             type="button"
             className="btn active"
             onClick={() => dispatch(remove(id))}
           >
-            remove
+            Remove
           </button>
           <button type="button" className="btn">
-            edit
+            Edit
           </button>
         </div>
       </div>
       <div className="stats-section">
         <div className="progress-circle">
           <div style={{ width: 70, height: 70 }}>
-            <CircularProgressbar
-              value={value}
-              maxValue={1}
-              text={`${value}%`}
-            />
+            <CircularProgressbar value={value} maxValue={1} />
           </div>
           <div>
             <h3 className="percentage">
-              {value}
+              {value * 100}
               %
             </h3>
             <span className="completed">completed</span>
