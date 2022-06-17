@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# BookStore React APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> The Bookstore is a React-Redux application connected to an existing API to create and remove books in a remote server. Users can Display the list of books, Add and Remove a selected book.
 
-## Available Scripts
+![screenshot](./app_screenshot.png)
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- React
+- Redux
+- Linters
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Not available]('')
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**This will be included in our portfolio**
 
-### `npm run build`
+To get a local copy up and running follow these simple example steps.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Step 1:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Go to the repo (https://github.com/kinginthenorthcodez/bookstore) and click on the <>Code tab.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Step 2:
 
-### `npm run eject`
+Below the <>Code tab, it will be a button that allows you to choose any of the branches of the repository you're interested in (it is commonly set by default to the "master" or "main" branch). Each branch may contain different files and changes to the repo. If you are not sure which one to choose, select the "master" branch.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Step 3:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Go and click on the right green button with the "code" tag. Be sure to copy any of the https or the SSH links.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Step 4:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Open the terminal in your computer. To do that, you need to type in the search bar "cmd" for Windows or "terminal" if you are using Línux or macOS.
 
-## Learn More
+### Step 5:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Go to the directory where you want to "pull" (download) the repo. If it doesn't exist, create it. Example: cd Documents/Microverse/Module_1/. You can create a folder manually and then go to it in the terminal using the cd command.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Step 6:
 
-### Code Splitting
+Once you get into your directory, type in the terminal: git clone https or git clone SSH, and then press enter. Example: git clone https://github.com/kinginthenorthcodez/bookstore
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Step 7:
 
-### Analyzing the Bundle Size
+npm i -g npm@latest to resolve any version dependecy
+Ready to work?⛏️ You're all set to explore and change the repo locally (on your computer).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Authors
 
-### Making a Progressive Web App
+👤 **Isaac Maqueen**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- GitHub: [@kinginthenorthcodez](https://github.com/kinginthenorthcodez)
+- Twitter: [@kinthenorthcode](https://twitter.com/kinthenorthcode)
 
-### Advanced Configuration
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions, issues, and feature requests are welcome!
 
-### Deployment
+Feel free to check the [issues page](https://github.com/kinginthenorthcodez/bookstore/issues)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Show your support
 
-### `npm run build` fails to minify
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+
+- Stackoverflow!!!
+- Inspiration.
+- etc.
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
